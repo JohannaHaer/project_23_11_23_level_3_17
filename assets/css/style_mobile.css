@@ -34,8 +34,8 @@
     /* Styling of section 3 with grid */
 
     .scaleup {
-        
         overflow: none;
+        margin: 0 auto;
     }
 
     .section3 .scaleup img {
@@ -94,4 +94,43 @@
         display: none;
     }
 
+    /* Footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, max-content);
+        grid-template-areas: 
+        "contact"
+        "about"
+        "form";
+        gap: 3rem;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact p {
+        margin-top: 0;
+        padding: 0 7vw;
+    }
+
+    .about {
+        padding-left: 4.2vw;
+    }
+
+    .form {
+        align-items: center;
+        padding: 0;
+    }
+
+    .email {
+        width: 70%;
+    }
+
+    form .button {
+        width: 70%;
+    }
 }

@@ -286,14 +286,14 @@ footer {
 
 .contact {
     grid-area: contact;
-    padding-right: 9vw;
+    padding-right: 15vw;
 }
 
 .about {
     grid-area: about;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .form {
@@ -315,7 +315,7 @@ footer {
 }
 
 .email {
-    padding: 1rem 0 1rem 1rem;
+    padding: 1.25rem 0 1.25rem 1rem;
     border-radius: 5px;
     border: none;
     font-size: var(--font-size-footer);
