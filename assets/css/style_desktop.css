@@ -13,3 +13,16 @@
     font-family: 'Ubuntu-Regular';
 }
 
+:root {
+    --font-color-brown: #957554;
+    --fonto-color-white: #FFF;
+    --font-color-black: rgba(0, 0, 0, 0.50);
+    --background-color-button: #DFAA5B;
+    --font-size-h1: 5rem;
+    --font-size-h2: 2.8rem;
+    --font-size-h3: 2.5rem;
+    --font-size-p-a-button: 1.5rem;
+    --font-size-header-forms: 1.875rem;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+}
