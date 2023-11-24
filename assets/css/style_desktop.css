@@ -54,8 +54,27 @@ nav li a {
     font-size: var(--font-size-p-a-button);
 }
 
+.pSec1 {
+    font-size: var(--font-size-p-a-button);
+    font-weight: var(--font-weight-500);
+    color: var(--fonto-color-white);
+}
 
-/* Header Styling with flex */
+
+/* Global Styling of all Buttons */
+
+.button{
+    font-size: var(--font-size-p-a-button);
+    color: var(--fonto-color-white);
+    background-color: var(--background-color-button);
+    font-weight: var(--font-weight-500);
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* !Header Styling with flex */
 
 .logo {
     width: 9.5rem;
@@ -82,3 +101,28 @@ nav {
     justify-content: space-between;
     width: 50vw;
 }
+
+/* !Main Styling */
+
+/* Styling of section 1 with display flex */
+
+.section1 {
+    height: 100vh;
+    background-image: url('../img/hero_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 5rem;
+}
+
+.padding {
+    padding: 1rem 6rem; 
+}
+
+/* Styling of section 2 with display grid */
+
