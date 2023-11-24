@@ -31,9 +31,67 @@
         border-radius: 0.3rem;
     }
 
+    /* Styling of section 3 with grid */
 
+    .scaleup {
+        
+        overflow: none;
+    }
 
-    /* .facilities {
-        flex-direction: column;
-    } */
+    .section3 .scaleup img {
+        transform: none;
+        object-fit: cover;
+        height: auto;
+        width: 95vw;
+    }
+
+    .scaleup:hover {
+        display: none;
+    }
+
+    .section3 {
+        display: grid;
+        grid-template-rows: repeat(5, max-content);
+        grid-template-rows: repeat(5, max-content);
+        grid-template-areas: 
+        "h2"
+        "category1"
+        "category2"
+        "category3"
+        "category4";
+        padding: 0;
+    }
+
+    .category1 {
+        grid-area: category1;
+        justify-self: center;
+        position: none;
+    }
+    
+    .category2 {
+        grid-area: category2;
+        justify-self: center;
+        position: none;
+    }
+    
+    .category3 {
+        grid-area: category3;
+        justify-self: center;
+        position: none;
+    }
+    
+    .category4 {
+        grid-area: category4;
+        justify-self: center;
+        position: none;
+    }
+    
+    .scaleup:hover img {
+        display: none;
+    }
+    
+    .scaleup:hover {
+        display: none;
+    }
+
 }

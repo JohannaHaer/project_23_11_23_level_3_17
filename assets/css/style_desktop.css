@@ -5,6 +5,16 @@
     src: url('../fonts/Ubuntu-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url('../fonts/Ubuntu-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('../fonts/Ubuntu-Bold.ttf');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -20,54 +30,65 @@
     --font-color-black: rgba(0, 0, 0, 0.50);
     --background-color-button: #DFAA5B;
     --background-button-hover: #806233;
+    --background-color-footer: #111;
     --font-size-h1: 5rem;
     --font-size-h2: 2.8rem;
     --font-size-h3: 2.5rem;
     --font-size-p-a-button: 1.5rem;
+    --font-size-footer: 1rem;
     --font-size-header-forms: 1.875rem;
-    --font-weight-500: 500;
-    --font-weight-400: 400;
+    --font-weight-500: 'Ubuntu-Bold';
+    --font-weight-300: 'Ubuntu-Light';
 }
 
 /* Global Styling of fonts */
 
 h1 {
     font-size: var(--font-size-h1);
-    font-weight:var(--font-weight-400);
     color: var(--fonto-color-white);
 }
 
 h2 {
     font-size: var(--font-size-h2);
-    font-weight:var(--font-weight-500);
+    font-family:var(--font-weight-500);
     color: var(--font-color-brown);
 }
 
 h3 {
     font-size: var(--font-size-h3);
-    font-weight:var(--font-weight-500);
+    font-family: var(--font-weight-500);
     color: var(--fonto-color-white);
     margin-bottom: 2rem;
 }
 
 nav li a {
     color: var(--font-color-brown);
-    font-weight: var(--font-weight-500);
+    font-family: var(--font-weight-500);
     font-size: var(--font-size-p-a-button);
 }
 
 .pSec1 {
     font-size: var(--font-size-p-a-button);
-    font-weight: var(--font-weight-500);
+    font-family: var(--font-weight-500);
     color: var(--fonto-color-white);
 }
 
 .facilIcons {
     font-size: var(--font-size-p-a-button);
-    font-weight: var(--font-weight-400);
     color: var(--font-color-brown);
 }
 
+.pFooter, footer a {
+    font-size: var(--font-size-footer);
+    color: var(--fonto-color-white);
+    font-family: var(--font-weight-300);
+}
+
+.subscribe {
+    font-size: var(--font-size-header-forms);
+    color: var(--fonto-color-white);
+    font-family: var(--font-weight-500);
+}
 
 /* Global Styling of all Buttons */
 
@@ -167,7 +188,7 @@ nav {
 
 .section3 .scaleup img {
     width: 100%;
-    height: max-content;
+    height: auto;
     transform: scale(1);
 }
 
@@ -214,7 +235,6 @@ nav {
 }
 
 .contentDescr {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,8 +257,68 @@ nav {
 }
 
 .scaleup:hover {
-    background-color: var(--image-color);
     position: relative;
     border-radius: 10px;
 }
 
+/* section 4 */
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 0 10rem 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--background-color-footer);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, max-content);
+    grid-template-areas: 
+    "contact about form";
+    gap: 2rem;
+    padding: 3rem 1rem 5rem 1rem;
+}
+
+.contact {
+    grid-area: contact;
+    padding-right: 9vw;
+}
+
+.about {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-right: 4vw;
+}
+
+.contact p {
+    margin-top: 3rem;
+    padding-left: 1.2vw;
+}
+
+.pFooter span {
+    font-family: var(--font-weight-500);
+}
+
+.email {
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: var(--font-size-footer);
+    font-family: var(--font-weight-300);
+    color: var(--font-color-black);
+}
