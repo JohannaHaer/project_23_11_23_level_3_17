@@ -39,7 +39,7 @@ h1 {
 h2 {
     font-size: var(--font-size-h2);
     font-weight:var(--font-weight-500);
-    color: var(--fonto-color-brown);
+    color: var(--font-color-brown);
 }
 
 h3 {
@@ -58,6 +58,12 @@ nav li a {
     font-size: var(--font-size-p-a-button);
     font-weight: var(--font-weight-500);
     color: var(--fonto-color-white);
+}
+
+.facilIcons {
+    font-size: var(--font-size-p-a-button);
+    font-weight: var(--font-weight-400);
+    color: var(--font-color-brown);
 }
 
 
@@ -118,11 +124,33 @@ nav {
     justify-content: center;
     gap: 2rem;
     padding-top: 5rem;
+    text-align: center;
 }
 
 .padding {
     padding: 1rem 6rem; 
 }
 
-/* Styling of section 2 with display grid */
+/* Styling of section 2 with display flex */
 
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0 4rem 0;
+}
+
+.facilities {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    flex-wrap: wrap;
+}
+
+.facilitiesDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}

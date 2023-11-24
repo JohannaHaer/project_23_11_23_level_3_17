@@ -1,7 +1,15 @@
 @media only screen and (max-width: 800px) {
 
+    html {
+        font-size: 10px;
+    }
+    
     header {
         position: relative;
+    }
+
+    nav {
+        display: none;
     }
     
     /* Styling of burger-menu */
@@ -9,17 +17,23 @@
     .burgerWrapper {
         position: absolute;
         right: 3rem;
-        top: 3rem;
+        top: 4.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
     .burger {
-        height: 0.13rem;
-        width: 1.5rem;
+        height: 0.2rem;
+        width: 2rem;
         background-color: var(--background-color-button);
-        margin: 0.13rem;
+        margin: 0.2rem;
         border-radius: 0.3rem;
     }
+
+
+
+    /* .facilities {
+        flex-direction: column;
+    } */
 }
