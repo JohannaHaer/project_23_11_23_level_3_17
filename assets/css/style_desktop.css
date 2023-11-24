@@ -1,10 +1,15 @@
 /*  Global Styling */
 
-
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Ubuntu-Regular';
 }
+
